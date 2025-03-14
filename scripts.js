@@ -4,7 +4,7 @@ function enable(buttonNumber){
     innerButton = innerButton.slice(4);
     document.getElementsByTagName("button")[index].innerHTML = "Hide" + innerButton;
     document.getElementsByTagName("button")[index].setAttribute("onclick", "disable(" + buttonNumber + ")")
-    document.getElementsByTagName("div")[index].style.display = "flex";
+    document.getElementsByClassName("section")[index].style.display = "flex";
 }
 function disable(buttonNumber){
     let index = buttonNumber - 1;
@@ -12,7 +12,7 @@ function disable(buttonNumber){
     innerButton = innerButton.slice(4);
     document.getElementsByTagName("button")[index].innerHTML = "Show" + innerButton;
     document.getElementsByTagName("button")[index].setAttribute("onclick", "enable(" + buttonNumber + ")")
-    document.getElementsByTagName("div")[index].style.display = "none";
+    document.getElementsByClassName("section")[index].style.display = "none";
 }
 
 function getWeeklyTable(){
