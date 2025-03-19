@@ -12,16 +12,16 @@ function createWeeklyTable(){
         for(var j = 0; j < 3; j++){
             var newWeekly = makeMeARow();
             if( j == 0){
-                var cellL = document.createElement("td"); //weekly boss row
-                cellL.setAttribute("rowspan", "3"); //for 3 row tall boss row
-                cellL.appendChild(makeMeADiv(i, "Boss")); //adds div to a row
-                newWeekly.appendChild(cellL);        
+                var cellL = document.createElement("td");
+                cellL.setAttribute("rowspan", "3");
+                cellL.appendChild(makeMeADiv(i, "Boss"));
+                newWeekly.appendChild(cellL);
             }
-            cell = document.createElement("td"); //boss drop row
+            cell = document.createElement("td");
             cell.appendChild(makeMeADiv(i, "Drop", j));
             newWeekly.appendChild(cell);
 
-            cell = document.createElement("td"); //boss drop row
+            cell = document.createElement("td");
             newWeekly.appendChild(cell);
 
             document.getElementById("weekly").getElementsByTagName("tbody")[0].appendChild(newWeekly);
@@ -30,19 +30,19 @@ function createWeeklyTable(){
 }
 
 function makeMeARow(){
-    var newWeekly = document.createElement("tr"); //makes a row
+    var newWeekly = document.createElement("tr");
     newWeekly.setAttribute("class", "weeklyr4");
     return newWeekly;
 }
 
 function makeMeADiv(iterator, type, row = 0){
-    var typicalDiv = document.createElement("div"); //makes boss row cell
+    var typicalDiv = document.createElement("div");
     typicalDiv.setAttribute("class", "weeklyr5");
-    var newImage = document.createElement("img"); //adds image
+    var newImage = document.createElement("img");
     if(type == "Boss"){
         newImage.setAttribute("src", wPictures[iterator]);
         typicalDiv.appendChild(newImage);
-        typicalDiv.innerHTML += wNames[iterator]; //adds name of the boss       
+        typicalDiv.innerHTML += wNames[iterator];
     }
     else if(type == "Drop"){
         newImage.setAttribute("src", dPictures[(iterator * 3) + row]);
