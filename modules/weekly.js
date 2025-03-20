@@ -31,13 +31,13 @@ function createWeeklyTable(){
 
 function makeMeARow(){
     var newWeekly = document.createElement("tr");
-    newWeekly.setAttribute("class", "weeklyr4");
+    newWeekly.setAttribute("class", "weeklyr2");
     return newWeekly;
 }
 
 function makeMeADiv(iterator, type, row = 0){
     var typicalDiv = document.createElement("div");
-    typicalDiv.setAttribute("class", "weeklyr5");
+    typicalDiv.setAttribute("class", "weeklyr3");
     var newImage = document.createElement("img");
     if(type == "Boss"){
         newImage.setAttribute("src", wPictures[iterator]);
