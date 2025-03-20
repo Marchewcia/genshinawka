@@ -132,7 +132,7 @@ function makeMeADiv(iterator, type, row = 0){
     typicalDiv.setAttribute("class", "weeklyr3");
     var newImage = document.createElement("img");
     if(type == "Boss"){
-        newImage.setAttribute("src", staticlink + wPictures[iterator]);
+        newImage.setAttribute("src", staticLink + wPictures[iterator]);
         typicalDiv.appendChild(newImage);
         typicalDiv.innerHTML += wNames[iterator];
     }
