@@ -1,8 +1,8 @@
 :root{
-    --background: rgb(90, 57, 121);
-    --backgroundAlternative: rgb(180, 57, 121);
-    --border: rgb(112, 40, 88);
-    --font: rgb(255, 255, 255);
+    --background: rgb(73, 38, 102);
+    --backgroundAlternative: rgb(97, 47, 104);
+    --border: rgb(47, 40, 112);
+    --font: rgb(190, 211, 74);
     --subtextFont: rgb(91, 121, 57);
     --linkFont: rgb(131, 175, 81);
 }
@@ -49,12 +49,12 @@ div {
 }
 
 h4 {
-    color: val(--subtextFont);
+    color: var(--subtextFont);
 }
 
 a {
     text-decoration: none;
-    color: val(--subtextFont);
+    color: var(--linkFont);
 }
 
 table {
@@ -107,5 +107,5 @@ img {
     display: flex;    
     flex-direction: row;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
