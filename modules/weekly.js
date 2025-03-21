@@ -98,6 +98,78 @@ const dNames = [
     "Eroded Scale-Feather"
 ];
 
+const cNames = [
+    ["Bennet", "Diluc", "Jean"],
+    ["Lisa", "Noelle", "Razor", "Xiangling"],
+    ["Amber", "Beidou", "Chongyun", "Anemo Traveler", "Geo Traveler", "Elementless Traveler"],
+    ["Qiqi", "Geo Traveler", "Venti", "Xingqiu"],
+    ["Barbara", "Keqing", "Klee", "Mona"],
+    ["Fischl", "Kaeya", "Ningguang", "Sucrose"],
+    ["Albedo", "Xinyan", "Zhongli"],
+    ["Diona", "Hu Tao", "Tartaglia"],
+    ["Ganyu", "Rosaria", "Xiao"],
+    ["Eula", "Electro Traveler", "Yoimiya"],
+    ["Dori", "Ayaka", "Yanfei"],
+    ["Kaedehara Kazuha", "Sayu", "Yelan"],
+    ["Aloy", "Gorou", "Raiden Shogun"],
+    ["Sangonomiya Kokomi", "Shenhe", "Thoma"],
+    ["Arataki Itto", "Kujou Sara", "Yun Jin"],
+    ["Cyno", "Ayato", "Dendro Traveler"],
+    ["Candace", "Collei", "Kuki Shinobu", "Nilou"],
+    ["Shikanoin Heizou", "Tighnari", "Yae Miko"],
+    ["Dehya", "Faruzan", "Nahida"],
+    ["Alhaitham", "Layla", "Mika", "Xilonen"],
+    ["Sethos", "Wanderer", "Yaoyao"],
+    ["Baizhu", "Freminet", "Hydro Traveler"],
+    ["Kaveh", "Lyney", "Wriothesley"],
+    ["Clorinde", "Kirara", "Lynette", "Neuvillette"],
+    ["Charlotte", "Chiori", "Navia", "Ororon"],
+    ["Chevreuse", "Sigewinne", "Xianyun"],
+    ["Furina", "Gaming", "Mualani"],
+    ["Arlecchino", "Kachina", "Yumemizuki Mizuki"],
+    ["Chasca", "Emilie"],
+    ["Citlali", "Kinich"],
+    ["Mauvika"],
+    ["Lan Yan"],
+    ["Varesa"]
+];
+
+const cPictures = [
+    ["/7/79/Bennett_Icon.png", "/3/3d/Diluc_Icon.png", "/6/64/Jean_Icon.png"],
+    ["/6/65/Lisa_Icon.png", "/8/8e/Noelle_Icon.png", "/b/b8/Razor_Icon.png", "/3/39/Xiangling_Icon.png"],
+    ["/7/75/Amber_Icon.png", "/e/e1/Beidou_Icon.png", "/3/35/Chongyun_Icon.png", "/5/59/Traveler_Icon.png", "/5/59/Traveler_Icon.png", "/5/59/Traveler_Icon.png"],
+    ["/b/b3/Qiqi_Icon.png", "/5/59/Traveler_Icon.png", "/f/f1/Venti_Icon.png", "/d/d4/Xingqiu_Icon.png"],
+    ["/6/6a/Barbara_Icon.png", "/5/52/Keqing_Icon.png", "/9/9c/Klee_Icon.png", "/4/41/Mona_Icon.png"],
+    ["/9/9a/Fischl_Icon.png", "/b/b6/Kaeya_Icon.png", "/e/e0/Ningguang_Icon.png", "/0/0e/Sucrose_Icon.png"],
+    ["/3/30/Albedo_Icon.png", "/2/24/Xinyan_Icon.png", "/a/a6/Zhongli_Icon.png"],
+    ["/4/40/Diona_Icon.png", "/e/e9/Hu_Tao_Icon.png", "/8/85/Tartaglia_Icon.png"],
+    ["/7/79/Ganyu_Icon.png", "/3/35/Rosaria_Icon.png", "/f/fd/Xiao_Icon.png"],
+    ["/a/af/Eula_Icon.png", "/5/59/Traveler_Icon.png", "/8/88/Yoimiya_Icon.png"],
+    ["/5/54/Dori_Icon.png", "/5/51/Kamisato_Ayaka_Icon.png", "/5/54/Yanfei_Icon.png"],
+    ["/e/e3/Kaedehara_Kazuha_Icon.png", "/2/22/Sayu_Icon.png", "/d/d3/Yelan_Icon.png"],
+    ["/e/e5/Aloy_Icon.png", "/f/fe/Gorou_Icon.png", "/2/24/Raiden_Shogun_Icon.png"],
+    ["/f/ff/Sangonomiya_Kokomi_Icon.png", "/a/af/Shenhe_Icon.png", "/5/5b/Thoma_Icon.png"],
+    ["/7/7b/Arataki_Itto_Icon.png", "/d/df/Kujou_Sara_Icon.png", "/9/9c/Yun_Jin_Icon.png"],
+    ["/3/31/Cyno_Icon.png", "/2/27/Kamisato_Ayato_Icon.png", "/5/59/Traveler_Icon.png"],
+    ["/d/dd/Candace_Icon.png", "/a/a2/Collei_Icon.png", "/b/b3/Kuki_Shinobu_Icon.png", "/5/58/Nilou_Icon.png"],
+    ["/2/20/Shikanoin_Heizou_Icon.png", "/8/87/Tighnari_Icon.png", "/b/ba/Yae_Miko_Icon.png"],
+    ["/3/3f/Dehya_Icon.png", "/b/b2/Faruzan_Icon.png", "/f/f9/Nahida_Icon.png"],
+    ["/2/2c/Alhaitham_Icon.png", "/1/1a/Layla_Icon.png", "/d/dd/Mika_Icon.png", "/a/ab/Xilonen_Icon.png"],
+    ["/9/90/Sethos_Icon.png", "/f/f8/Wanderer_Icon.png", "/8/83/Yaoyao_Icon.png"],
+    ["/c/cb/Baizhu_Icon.png", "/e/ee/Freminet_Icon.png", "/5/59/Traveler_Icon.png"],
+    ["/1/1f/Kaveh_Icon.png", "/b/b2/Lyney_Icon.png", "/b/bb/Wriothesley_Icon.png"],
+    ["/5/5b/Clorinde_Icon.png", "/b/b6/Kirara_Icon.png", "/a/ad/Lynette_Icon.png", "/2/21/Neuvillette_Icon.png"],
+    ["/d/d2/Charlotte_Icon.png", "/8/88/Chiori_Icon.png", "/c/c0/Navia_Icon.png", "/5/5e/Ororon_Icon.png"],
+    ["/8/8a/Chevreuse_Icon.png", "/3/37/Sigewinne_Icon.png", "/d/d3/Xianyun_Icon.png"],
+    ["/e/e6/Furina_Icon.png", "/7/77/Gaming_Icon.png", "/0/0b/Mualani_Icon.png"],
+    ["/9/9a/Arlecchino_Icon.png", "/1/1a/Kachina_Icon.png", "/f/f6/Yumemizuki_Mizuki_Icon.png"],
+    ["/0/03/Chasca_Icon.png", "/a/aa/Emilie_Icon.png"],
+    ["/d/dd/Citlali_Icon.png", "/9/9a/Kinich_Icon.png"],
+    ["/d/da/Mavuika_Icon.png"],
+    ["/e/e6/Lan_Yan_Icon.png/"],
+    ["/d/dd/Varesa_Icon.png"]
+];
+
 function createWeeklyTable(){
     for(var i = 0; i < wNames.length; i++){
         for(var j = 0; j < 3; j++){
@@ -113,6 +185,12 @@ function createWeeklyTable(){
             newWeekly.appendChild(cell);
 
             cell = document.createElement("td");
+            var tempDiv = document.createElement("div");
+            tempDiv.setAttribute("class", "weeklyr4");
+            cell.appendChild(tempDiv);
+            for(k = 0; k < cNames[(i * 3) + j].length; k++){
+                cell.children[0].appendChild(makeMeADiv((i * 3) + j, "Character", k));
+            }
             newWeekly.appendChild(cell);
 
             document.getElementById("weekly").getElementsByTagName("tbody")[0].appendChild(newWeekly);
@@ -140,6 +218,11 @@ function makeMeADiv(iterator, type, row = 0){
         newImage.setAttribute("src", staticLink + dPictures[(iterator * 3) + row]);
         typicalDiv.appendChild(newImage);
         typicalDiv.innerHTML += dNames[(iterator * 3) + row];
+    }
+    else if(type == "Character"){
+        newImage.setAttribute("src", staticLink + cPictures[iterator][row]);
+        typicalDiv.appendChild(newImage);
+        typicalDiv.innerHTML += cNames[iterator][row];
     }
     return typicalDiv;
 }
